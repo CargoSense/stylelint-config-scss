@@ -1,46 +1,22 @@
-name: Publish
+name: CI
 
 on:
-  release:
-    types: [published]
+  pull_request:
+  workflow_call:
+  workflow_dispatch:
 
 jobs:
-  ci:
-    name: CI
-    uses: ./.github/workflows/ci.yml
-  publish-to-npm:
-    name: Publish to npm
-    permissions:
-      contents: read
-      id-token: write
-    needs: ci
+  test:
+    name: Test files
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        version: [18, 20]
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
-          node-version-file: ".nvmrc"
+          node-version: ${{ matrix.version }}
           cache: npm
-          registry-url: https://registry.npmjs.org
       - run: npm ci
-      - run: npm publish --provenance
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-  publish-to-github-packages:
-    name: Publish to GitHub Packages
-    permissions:
-      contents: read
-      packages: write
-    needs: ci
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
-        with:
-          node-version-file: ".nvmrc"
-          cache: npm
-          registry-url: https://npm.pkg.github.com
-      - run: npm ci
-      - run: npm publish
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - run: npm test
