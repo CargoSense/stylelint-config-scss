@@ -1,0 +1,43 @@
+{
+  "name": "@cargosense/stylelint-config-scss",
+  "version": "0.1.0",
+  "description": "Shareable Stylelint configuration for SCSS syntax Sass files.",
+  "keywords": [
+    "stylelint",
+    "stylelintconfig",
+    "scss"
+  ],
+  "homepage": "https://github.com/CargoSense/stylelint-config-scss",
+  "bugs": "https://github.com/CargoSense/stylelint-config-scss/issues",
+  "license": "MIT",
+  "author": "CargoSense <npm@cargosense.com> (https://www.cargosense.com)",
+  "files": [
+    "index.js"
+  ],
+  "type": "module",
+  "exports": {
+    "./package.json": "./package.json",
+    ".": "./index.js"
+  },
+  "repository": "github:CargoSense/stylelint-config-scss",
+  "scripts": {
+    "test": "NODE_V8_COVERAGE=coverage node --experimental-test-coverage --test ./test"
+  },
+  "dependencies": {
+    "@stylistic/stylelint-config": "^1.0.1",
+    "stylelint-config-standard-scss": "^13.0.0",
+    "stylelint-order": "^6.0.4"
+  },
+  "devDependencies": {
+    "stylelint": "^16.1.0"
+  },
+  "peerDependencies": {
+    "stylelint": ">=16.1"
+  },
+  "engines": {
+    "node": ">=18.12.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
