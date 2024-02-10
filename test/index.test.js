@@ -60,23 +60,3 @@ test("loads the configuration and invalidates incorrect syntax", async t => {
 
   assert.deepStrictEqual(actual, expected);
 });
-
-
-// test('loads the configuration and invalidates incorrect syntaxx', async t => {
-//   const code = fs.readFileSync('./test/helpers/invalid.scss', 'utf8');
-//   const { errored, results } = await stylelint.lint({ code, config });
-//
-//   t.true(errored);
-//
-//   t.like(results, [
-//     {
-//       errored: true,
-//       warnings: [
-//         { rule: 'scss/comment-no-loud' },
-//         { rule: 'scss/selector-no-redundant-nesting-selector' },
-//         { rule: 'scss/comment-no-empty' },
-//         { rule: 'scss/at-rule-no-unknown' }
-//       ]
-//     }
-//   ]);
-// });
