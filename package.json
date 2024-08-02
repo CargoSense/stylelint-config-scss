@@ -24,15 +24,15 @@
     "test": "NODE_V8_COVERAGE=coverage node --experimental-test-coverage --test"
   },
   "dependencies": {
-    "@stylistic/stylelint-config": "^1.0.1",
+    "@stylistic/stylelint-config": "^2.0.0",
     "stylelint-config-standard-scss": "^13.1.0",
     "stylelint-order": "^6.0.4"
   },
   "devDependencies": {
-    "stylelint": "^16.6.0"
+    "stylelint": "^16.8.1"
   },
   "peerDependencies": {
-    "stylelint": ">=16.1"
+    "stylelint": ">=16.8"
   },
   "engines": {
     "node": ">=18.12.0"
