@@ -26,8 +26,8 @@ export default {
       {
         except: ["blockless-after-same-name-blockless", "first-nested"],
         ignore: ["after-comment"],
-        ignoreAtRules: ["else"]
-      }
+        ignoreAtRules: ["else"],
+      },
     ],
 
     /**
@@ -82,8 +82,8 @@ export default {
       "always",
       {
         except: ["before-dollar-variable", "last-nested"],
-        ignore: ["before-comment", "inside-single-line-block"]
-      }
+        ignore: ["before-comment", "inside-single-line-block"],
+      },
     ],
 
     /**
@@ -145,8 +145,8 @@ export default {
     "@stylistic/block-closing-brace-newline-after": [
       "always",
       {
-        ignoreAtRules: ["if", "else"]
-      }
+        ignoreAtRules: ["if", "else"],
+      },
     ],
 
     /**
@@ -161,6 +161,6 @@ export default {
      *
      * @see {@link https://github.com/stylelint-stylistic/stylelint-stylistic/tree/main/lib/rules/unicode-bom}
      */
-    "@stylistic/unicode-bom": "never"
-  }
+    "@stylistic/unicode-bom": "never",
+  },
 };
