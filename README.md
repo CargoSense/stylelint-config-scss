@@ -4,7 +4,7 @@
 
 [![npm](https://img.shields.io/npm/v/@cargosense/stylelint-config-scss.svg?logo=npm&style=for-the-badge)](https://www.npmjs.com/package/@cargosense/stylelint-config-scss)
 [![Downloads](https://img.shields.io/npm/dt/@cargosense/stylelint-config-scss.svg?logo=npm&style=for-the-badge)](https://www.npmjs.com/package/@cargosense/stylelint-config-scss)
-[![Build](https://img.shields.io/github/actions/workflow/status/CargoSense/stylelint-config-scss/ci.yml?branch=main&logo=github&style=for-the-badge)](https://github.com/CargoSense/stylelint-config-scss/actions/workflows/ci.yml)
+[![Build](https://img.shields.io/github/actions/workflow/status/CargoSense/stylelint-config-scss/ci.yml?logo=github&style=for-the-badge)](https://github.com/CargoSense/stylelint-config-scss/actions/workflows/ci.yml)
 
 ## Installation
 
