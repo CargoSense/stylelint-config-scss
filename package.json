@@ -26,10 +26,10 @@
     "stylelint-order": "^7.0.0"
   },
   "devDependencies": {
-    "stylelint": "^16.13.2"
+    "stylelint": "^16.19.1"
   },
   "peerDependencies": {
-    "stylelint": ">=16.13"
+    "stylelint": ">=16.19.1"
   },
   "engines": {
     "node": ">=18.12.0"
