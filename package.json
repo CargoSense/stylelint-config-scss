@@ -1,6 +1,6 @@
 {
   "name": "@cargosense/stylelint-config-scss",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Shareable Stylelint configuration for SCSS syntax Sass files.",
   "keywords": [
     "stylelint",
@@ -22,14 +22,14 @@
   },
   "dependencies": {
     "@stylistic/stylelint-config": "^2.0.0",
-    "stylelint-config-standard-scss": "^14.0.0",
+    "stylelint-config-standard-scss": "^15.0.1",
     "stylelint-order": "^7.0.0"
   },
   "devDependencies": {
-    "stylelint": "^16.19.1"
+    "stylelint": "^16.20.0"
   },
   "peerDependencies": {
-    "stylelint": ">=16.19.1"
+    "stylelint": ">=16.20.0"
   },
   "engines": {
     "node": ">=20.19.0"
