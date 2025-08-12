@@ -6,7 +6,7 @@ import stylelint from "stylelint";
 
 import config from "../index.js";
 
-test("module.exports", t => {
+test("module.exports", () => {
   /**
    * The Node.js assert module doesn't include a matcher similar to AVA's `like`
    * matcher. So, manually assign the values under test to `actual`.
@@ -16,25 +16,25 @@ test("module.exports", t => {
    */
   const actual = {
     extends: config.extends,
-    plugins: config.plugins
+    plugins: config.plugins,
   };
 
   const expected = {
     extends: ["stylelint-config-standard-scss", "@stylistic/stylelint-config"],
-    plugins: ["stylelint-order"]
+    plugins: ["stylelint-order"],
   };
 
   assert.deepStrictEqual(actual, expected);
 });
 
-test("loads the configuration and validates correct syntax", async t => {
+test("loads the configuration and validates correct syntax", async () => {
   const code = fs.readFileSync("./test/helpers/valid.scss", "utf8");
   const { errored } = await stylelint.lint({ code, config });
 
   assert.strictEqual(errored, false);
 });
 
-test("loads the configuration and invalidates incorrect syntax", async t => {
+test("loads the configuration and invalidates incorrect syntax", async () => {
   const code = fs.readFileSync("./test/helpers/invalid.scss", "utf8");
   const { errored, results } = await stylelint.lint({ code, config });
 
@@ -45,7 +45,7 @@ test("loads the configuration and invalidates incorrect syntax", async t => {
    */
   const actual = {
     errored,
-    warnings: results[0].warnings.map(({ rule }) => rule)
+    warnings: results[0].warnings.map(({ rule }) => rule),
   };
 
   const expected = {
@@ -54,8 +54,8 @@ test("loads the configuration and invalidates incorrect syntax", async t => {
       "scss/comment-no-loud",
       "scss/selector-no-redundant-nesting-selector",
       "scss/comment-no-empty",
-      "scss/at-rule-no-unknown"
-    ]
+      "scss/at-rule-no-unknown",
+    ],
   };
 
   assert.deepStrictEqual(actual, expected);
