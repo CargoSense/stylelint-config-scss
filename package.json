@@ -18,6 +18,7 @@
   "exports": "./index.js",
   "repository": "https://github.com/CargoSense/stylelint-config-scss",
   "scripts": {
+    "lint": "npx eslint",
     "test": "NODE_V8_COVERAGE=coverage node --experimental-test-coverage --test"
   },
   "dependencies": {
@@ -26,6 +27,7 @@
     "stylelint-order": "^7.0.0"
   },
   "devDependencies": {
+    "@cargosense/eslint-config": "^4.1.0",
     "stylelint": "^16.23.1"
   },
   "peerDependencies": {
