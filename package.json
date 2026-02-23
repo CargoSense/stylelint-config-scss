@@ -28,7 +28,7 @@
   },
   "devDependencies": {
     "@cargosense/eslint-config": "^6.1.0",
-    "stylelint": "^16.26.1"
+    "stylelint": "^17.3.0"
   },
   "peerDependencies": {
     "stylelint": ">=16.26.1"
