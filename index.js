@@ -4,13 +4,18 @@ export default {
    * @see {@link https://www.npmjs.com/package/stylelint-config-standard-scss}
    * @see {@link https://www.npmjs.com/package/@stylistic/stylelint-config}
    */
-  extends: ["stylelint-config-standard-scss", "@stylistic/stylelint-config"],
+  extends: [
+    "stylelint-config-standard-scss",
+    "@stylistic/stylelint-config",
+  ],
 
   /**
    * @see {@link https://stylelint.io/user-guide/configure#plugins}
    * @see {@link https://www.npmjs.com/package/stylelint-order}
    */
-  plugins: ["stylelint-order"],
+  plugins: [
+    "stylelint-order",
+  ],
 
   /**
    * @see {@link https://stylelint.io/user-guide/configure#rules}
