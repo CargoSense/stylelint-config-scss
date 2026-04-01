@@ -24,7 +24,7 @@
   "dependencies": {
     "@stylistic/stylelint-config": "^4.0.0",
     "stylelint-config-standard-scss": "^17.0.0",
-    "stylelint-order": "^7.0.1"
+    "stylelint-order": "^8.1.1"
   },
   "devDependencies": {
     "@cargosense/eslint-config": "^6.1.0",
