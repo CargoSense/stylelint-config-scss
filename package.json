@@ -27,7 +27,7 @@
     "stylelint-order": "^8.1.1"
   },
   "devDependencies": {
-    "@cargosense/eslint-config": "^6.2.0",
+    "@cargosense/eslint-config": "^6.3.0",
     "stylelint": "^17.13.0"
   },
   "peerDependencies": {
